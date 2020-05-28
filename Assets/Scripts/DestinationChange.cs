@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class DestinationChange : MonoBehaviour
 {
-    [SerializeField] int xRange1 = 200;
-    [SerializeField] int xRange2 = 240;
-    [SerializeField] int zRange1 = 2800;
-    [SerializeField] int zRange2 = 2840;
-
     public int xPos;
     public int zPos;
 
@@ -17,9 +12,9 @@ public class DestinationChange : MonoBehaviour
         if (other.tag == "Animal")
         {
             Debug.Log("Colide!!");
-            xPos = Random.Range(xRange1, xRange2);
-            zPos = Random.Range(zRange1, zRange2);
-            this.gameObject.transform.position = new Vector3(xPos, this.transform.position.y, zPos);
+            xPos = Random.Range(160, 240);
+            zPos = Random.Range(1760, 2800);
+            this.gameObject.transform.position = new Vector3(xPos, 0, zPos);
         }
     }
 }
