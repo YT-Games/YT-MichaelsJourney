@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Animal
   - Axe
+  - Crosshair
+  - Look Root
+  - FP Camera
+  - Arrow
+  - Enemy
   layers:
   - Default
   - TransparentFX
