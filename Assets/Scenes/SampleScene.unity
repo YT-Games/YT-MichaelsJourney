@@ -652,24 +652,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1351167065, guid: 4c5c13dc6d5d3b74597ed217449ff0c0, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2848467288392415563, guid: 4c5c13dc6d5d3b74597ed217449ff0c0,
         type: 3}
       propertyPath: m_Name
       value: Boar (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2848467288392415563, guid: 4c5c13dc6d5d3b74597ed217449ff0c0,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 2848467288392415563, guid: 4c5c13dc6d5d3b74597ed217449ff0c0,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2848467288392508779, guid: 4c5c13dc6d5d3b74597ed217449ff0c0,
         type: 3}
@@ -679,7 +665,7 @@ PrefabInstance:
     - target: {fileID: 2848467288392508779, guid: 4c5c13dc6d5d3b74597ed217449ff0c0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 25.98
+      value: 25.66
       objectReference: {fileID: 0}
     - target: {fileID: 2848467288392508779, guid: 4c5c13dc6d5d3b74597ed217449ff0c0,
         type: 3}
@@ -2777,8 +2763,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1417078179}
-  m_LocalRotation: {x: -0.02085899, y: -0.9560359, z: -0.07331995, w: 0.28316867}
-  m_LocalPosition: {x: 196.85353, y: 18.203453, z: 2805.7266}
+  m_LocalRotation: {x: -0.2344703, y: -0.24206978, z: -0.061343543, w: 0.9395014}
+  m_LocalPosition: {x: 201.57272, y: 12.42984, z: 2801.8025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1525720160}
@@ -3173,8 +3159,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677886300}
-  m_LocalRotation: {x: -0.017422482, y: -0.9175449, z: -0.041800752, w: 0.395045}
-  m_LocalPosition: {x: 198.6998, y: 15.426678, z: 2800.3088}
+  m_LocalRotation: {x: -0.2344703, y: -0.24206978, z: -0.061343543, w: 0.9395014}
+  m_LocalPosition: {x: 201.57272, y: 12.42984, z: 2801.8025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1525720160}
@@ -4293,8 +4279,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1918298261}
-  m_LocalRotation: {x: -0.017422482, y: -0.9175449, z: -0.041800752, w: 0.395045}
-  m_LocalPosition: {x: 198.6998, y: 196.62668, z: 2800.3088}
+  m_LocalRotation: {x: -0.106907584, y: -0.68014413, z: -0.10271251, w: 0.717931}
+  m_LocalPosition: {x: 314.82086, y: 111.16192, z: 2260.1438}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1450182525}
@@ -4783,7 +4769,7 @@ PrefabInstance:
     - target: {fileID: 163705561748373800, guid: 72e04c17f05056c48858a0fe73084046,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 25.56
+      value: 25.478
       objectReference: {fileID: 0}
     - target: {fileID: 163705561748373800, guid: 72e04c17f05056c48858a0fe73084046,
         type: 3}
@@ -5046,11 +5032,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8646818339103668369, guid: b46ec526d41395043b77d5a3471c53ff,
-        type: 3}
-      propertyPath: chase_Distance
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 8646818339103668371, guid: b46ec526d41395043b77d5a3471c53ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5110,16 +5091,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Eagle
-      objectReference: {fileID: 0}
-    - target: {fileID: 8646818339103668378, guid: b46ec526d41395043b77d5a3471c53ff,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 8646818339103668378, guid: b46ec526d41395043b77d5a3471c53ff,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b46ec526d41395043b77d5a3471c53ff, type: 3}

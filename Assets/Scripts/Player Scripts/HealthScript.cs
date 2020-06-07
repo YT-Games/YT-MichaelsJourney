@@ -51,5 +51,79 @@ public class HealthScript : MonoBehaviour
                 enemyController.chase_Distance = 50f;
             }
         }
+        
+        if (health <= 0)
+        {
+            PlayerDied();
+
+            is_Dead = true;
+        }
     }
+
+    void PlayerDied()
+    {
+        if (is_Tiger)
+        {
+            GetComponent<Animator>().enabled = false;
+            GetComponent<BoxCollider>().isTrigger = false;
+
+            enemyController.enabled = false;
+            navAgent.enabled = false;
+            enemyAnim.enabled = false;
+
+            // StartCoroutine
+
+            // EnemyManager spawn more enemies
+        }
+
+
+        if (is_Boar)
+        {
+            navAgent.velocity = Vector3.zero;
+            navAgent.isStopped = true;
+            enemyController.enabled = false;
+
+            enemyAnim.Dead();
+
+            // StartCoroutine
+
+            // EnemyManager spawn more enemies
+        }
+
+        if (is_Player)
+        {
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag(Tags.ENEMY_TAG);
+
+            for (int i=0; i < enemies.Length; i++)
+            {
+                enemies[i].GetComponent<EnemyController>().enabled = false;
+            }
+
+            // call enemy manager to stop spawning enemies
+
+            GetComponent<PlayerMovement>().enabled = false;
+            GetComponent<PlayerAttack>().enabled = false;
+            GetComponent<WeaponManager>().GetCurrentSelectedWeapon().gameObject.SetActive(false);
+        }
+
+        if (tag == Tags.PLAYER_TAG)
+        {
+            Invoke("RestartGame", 3f);
+        }
+        else
+        {
+            Invoke("TurnOffGameObject", 3f);
+        }
+    }
+
+    void RestartGame()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
+    }
+
+    void TurnOffGameObject()
+    {
+        gameObject.SetActive(false);
+    }
+
 }
