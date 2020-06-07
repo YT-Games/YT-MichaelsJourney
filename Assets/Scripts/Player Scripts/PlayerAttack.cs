@@ -143,14 +143,14 @@ public class PlayerAttack : MonoBehaviour
             GameObject arrow = Instantiate(arrowPrefab);
             arrow.transform.position = ArrowBowStartPosition.position;
 
-            arrow.GetComponent<BowAndArrow>().Launch(mainCam);
+            arrow.GetComponent<SpearAndArrow>().Launch(mainCam);
         }
         else
         {
             GameObject spear = Instantiate(spearPrefab);
             spear.transform.position = ArrowBowStartPosition.position;
 
-            spear.GetComponent<BowAndArrow>().Launch(mainCam);
+            spear.GetComponent<SpearAndArrow>().Launch(mainCam);
         }
     }
 
@@ -161,6 +161,11 @@ public class PlayerAttack : MonoBehaviour
         if (Physics.Raycast(mainCam.transform.position, mainCam.transform.forward, out hit))
         {
             print("WE HIT: " + hit.transform.gameObject.name);
+
+            if (hit.transform.tag == Tags.ENEMY_TAG)
+            {
+                hit.transform.GetComponent<HealthScript>().ApplyDamage(damage);
+            }
         }
     }
 }
