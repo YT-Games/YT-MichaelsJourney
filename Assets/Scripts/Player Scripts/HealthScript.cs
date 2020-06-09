@@ -16,6 +16,10 @@ public class HealthScript : MonoBehaviour
 
     private bool is_Dead;
 
+    private EnemyAudio enemyAudio;
+
+    private PlayerStats playerStats;
+
     void Awake()
     {
         if (is_Boar || is_Tiger)
@@ -25,10 +29,11 @@ public class HealthScript : MonoBehaviour
             navAgent = GetComponent<NavMeshAgent>();
 
             //get enemy audio
+            enemyAudio = GetComponentInChildren<EnemyAudio>();
         }
         if (is_Player)
         {
-
+            playerStats = GetComponent<PlayerStats>();
         }
     }
 
@@ -42,6 +47,7 @@ public class HealthScript : MonoBehaviour
 
         if (is_Player)
         { // show the stats (display the health UI value) 
+            playerStats.DisplayHealthStats(health);
 
         }
         if (is_Boar || is_Tiger)
@@ -72,8 +78,11 @@ public class HealthScript : MonoBehaviour
             enemyAnim.enabled = false;
 
             // StartCoroutine
+            StartCoroutine(DeadSound());
 
             // EnemyManager spawn more enemies
+            EnemyManager.instance.EnemyDied("tiger");
+
         }
 
 
@@ -86,8 +95,10 @@ public class HealthScript : MonoBehaviour
             enemyAnim.Dead();
 
             // StartCoroutine
+            StartCoroutine(DeadSound());
 
             // EnemyManager spawn more enemies
+            EnemyManager.instance.EnemyDied("boar");
         }
 
         if (is_Player)
@@ -100,6 +111,7 @@ public class HealthScript : MonoBehaviour
             }
 
             // call enemy manager to stop spawning enemies
+            EnemyManager.instance.StopSpawning();
 
             GetComponent<PlayerMovement>().enabled = false;
             GetComponent<PlayerAttack>().enabled = false;
@@ -124,6 +136,13 @@ public class HealthScript : MonoBehaviour
     void TurnOffGameObject()
     {
         gameObject.SetActive(false);
+    }
+
+    IEnumerator DeadSound()
+    {
+        yield return new WaitForSeconds(0.3f);
+        enemyAudio.PlayDeadSound();
+
     }
 
 }

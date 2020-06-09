@@ -37,8 +37,13 @@ public class SpearAndArrow : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider target)
     { // after we touched an enemy, deactivate gameObject
+        if (target.tag == Tags.ENEMY_TAG)
+        {
+            target.GetComponent<HealthScript>().ApplyDamage(damage);
 
+            gameObject.SetActive(false);
+        }
     }
 }
