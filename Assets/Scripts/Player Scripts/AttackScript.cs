@@ -16,6 +16,8 @@ public class AttackScript : MonoBehaviour
         {
             print("We Touched: " + hits[0].gameObject.tag);
 
+            hits[0].gameObject.GetComponent<HealthScript>().ApplyDamage(damage);
+
             gameObject.SetActive(false);
         }
     }
