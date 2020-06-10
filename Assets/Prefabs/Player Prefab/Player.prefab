@@ -1111,6 +1111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3670c1a9df1a90b4cab30aa78d2f1868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health_Stats: {fileID: 0}
+  stamina_Stats: {fileID: 0}
 --- !u!1 &7376057417774186958
 GameObject:
   m_ObjectHideFlags: 0
