@@ -975,9 +975,9 @@ GameObject:
   - component: {fileID: 8646818339103668373}
   - component: {fileID: 8646818339103668369}
   - component: {fileID: 8646818339103668370}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Eagle
-  m_TagString: Animal
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1082,13 +1082,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 4
   runSpeed: 4
-  chase_Distance: 7
+  chase_Distance: 20
   attack_Distance: 1.8
   chase_After_Attack_Distance: 2
   patrol_Radius_Min: 20
   patrol_Radius_Max: 60
   patrol_For_This_Time: 15
   wait_Before_Attack: 2
+  attackPoint: {fileID: 0}
 --- !u!114 &8646818339103668370
 MonoBehaviour:
   m_ObjectHideFlags: 0

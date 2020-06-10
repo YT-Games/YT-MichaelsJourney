@@ -36,12 +36,16 @@ public class EnemyController : MonoBehaviour
 
     public GameObject attackPoint;
 
+    private EnemyAudio enemyAudio;
+
     private void Awake()
     {
         enemyAnim = GetComponent<EnemyAnimator>();
         navAgent = GetComponent<NavMeshAgent>();
 
         target = GameObject.FindWithTag(Tags.PLAYER_TAG).transform;
+
+        enemyAudio = GetComponentInChildren<EnemyAudio>();
     }
     void Start()
     {
@@ -100,6 +104,7 @@ public class EnemyController : MonoBehaviour
             enemyState = EnemyState.CHASE;
 
             // play spotted audio
+            enemyAudio.PlayScreamSound();
 
         }
     }
@@ -163,6 +168,7 @@ public class EnemyController : MonoBehaviour
             attack_Timer = 0f;
 
             // play attack sound
+            enemyAudio.PlayAttackSound();
         }
 
         if (Vector3.Distance(transform.position, target.position) > attack_Distance + chase_After_Attack_Distance)

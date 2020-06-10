@@ -26,11 +26,18 @@ public class PlayerSprintAndCrouch : MonoBehaviour
     private float sprint_Step_Distance = 0.25f;
     private float crouch_Step_Distance = 0.5f;
 
+    private PlayerStats playerStats;
+
+    private float sprint_Value = 100f;
+    private float sprint_Treshold = 10f;
+
     void Awake()
     {
         playerMovement = GetComponent<PlayerMovement>();
         look_root = transform.GetChild(0);
         player_Footsteps = GetComponentInChildren<PlayerFootsteps>();
+
+        playerStats = GetComponent<PlayerStats>();
     }
 
     void Start()
@@ -48,14 +55,18 @@ public class PlayerSprintAndCrouch : MonoBehaviour
 
     void Sprint()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && !is_Crouching)
+        if(sprint_Value > 0f) // if we have stamina we can sprint
         {
-            playerMovement.speed = sprint_Speed;
+            if (Input.GetKeyDown(KeyCode.LeftShift) && !is_Crouching)
+            {
+                playerMovement.speed = sprint_Speed;
 
-            player_Footsteps.step_Distance = sprint_Step_Distance;
-            player_Footsteps.volume_Min = sprint_Volume;
-            player_Footsteps.volume_Max = sprint_Volume;
+                player_Footsteps.step_Distance = sprint_Step_Distance;
+                player_Footsteps.volume_Min = sprint_Volume;
+                player_Footsteps.volume_Max = sprint_Volume;
+            }
         }
+
         if (Input.GetKeyUp(KeyCode.LeftShift) && !is_Crouching)
         {
             playerMovement.speed = move_Speed;
@@ -63,6 +74,37 @@ public class PlayerSprintAndCrouch : MonoBehaviour
             player_Footsteps.step_Distance = walk_Step_Distance;
             player_Footsteps.volume_Min = walk_Volume_Min;
             player_Footsteps.volume_Min = walk_Volume_Max;
+        }
+
+        if (Input.GetKey(KeyCode.LeftShift) && !is_Crouching)
+        {
+            sprint_Value -= sprint_Treshold * Time.deltaTime;
+
+            if (sprint_Value <= 0f)
+            {
+                sprint_Value = 0f;
+
+                playerMovement.speed = move_Speed;
+                player_Footsteps.step_Distance = walk_Step_Distance;
+                player_Footsteps.volume_Min = walk_Volume_Min;
+                player_Footsteps.volume_Min = walk_Volume_Max;
+            }
+            playerStats.DisplayStaminaStats(sprint_Value);
+
+        }
+        else
+        {
+            if (sprint_Value != 100f)
+            {
+                sprint_Value += (sprint_Treshold / 2f) * Time.deltaTime;
+
+                playerStats.DisplayStaminaStats(sprint_Value);
+
+                if (sprint_Value > 100f)
+                {
+                    sprint_Value = 100f;
+                }
+            }
         }
     }
 
