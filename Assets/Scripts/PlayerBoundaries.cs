@@ -8,10 +8,10 @@ public class PlayerBoundaries : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("hit ...");
         if (other.tag == "Boundaries")
         {
             Debug.Log("hit boundaries");
+
         }
     }
 }
