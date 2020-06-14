@@ -11,6 +11,7 @@ public class Dialog : MonoBehaviour
     private int index;
     public float typingSpeed;
     public GameObject continueButton;
+    public GameObject skipButton;
     public GameObject image1;
     public GameObject image2;
 
@@ -59,5 +60,10 @@ public class Dialog : MonoBehaviour
             textDisplay.text = "";
             SceneManager.LoadScene("GamePlay");
         }
+    }
+
+    public void SkipButton()
+    {
+        SceneManager.LoadScene("GamePlay");
     }
 }
