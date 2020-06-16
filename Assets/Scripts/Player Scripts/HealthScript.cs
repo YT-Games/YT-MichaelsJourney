@@ -12,7 +12,7 @@ public class HealthScript : MonoBehaviour
 
     public float health = 100f;
 
-    public bool is_Player, is_Boar, is_Tiger;
+    public bool is_Player, is_Boar, is_Tiger, is_Tree;
 
     private bool is_Dead;
 
@@ -117,6 +117,12 @@ public class HealthScript : MonoBehaviour
             GetComponent<PlayerAttack>().enabled = false;
             GetComponent<WeaponManager>().GetCurrentSelectedWeapon().gameObject.SetActive(false);
         }
+
+        if (is_Tree)
+        {
+            Destroy(this);
+        }
+
 
         if (tag == Tags.PLAYER_TAG)
         {
