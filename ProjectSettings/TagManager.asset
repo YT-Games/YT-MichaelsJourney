@@ -12,6 +12,7 @@ TagManager:
   - Arrow
   - Enemy
   - Boundaries
+  - Item
   layers:
   - Default
   - TransparentFX

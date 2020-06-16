@@ -56,6 +56,8 @@ public class PlayerAttack : MonoBehaviour
                 nextTimeToFire = Time.time + 1f / fireRate;
 
                 weaponManager.GetCurrentSelectedWeapon().ShootAnimation();
+
+                BulletFired();
             }
         }
         //Weapons that shoots SINGLE
