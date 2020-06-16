@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class Dialog : MonoBehaviour
+public class DialogOpenScene : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
     public string[] sentences;
