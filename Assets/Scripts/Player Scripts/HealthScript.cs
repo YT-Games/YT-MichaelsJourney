@@ -66,6 +66,18 @@ public class HealthScript : MonoBehaviour
         }
     }
 
+    public void RestoreHealth(float HPAmount)
+    {
+        if (is_Dead)
+        {
+            return;
+        }
+        health += HPAmount;
+
+        playerStats.DisplayHealthStats(health);
+    }
+
+
     void PlayerDied()
     {
         if (is_Tiger)

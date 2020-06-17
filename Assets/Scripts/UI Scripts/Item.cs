@@ -10,12 +10,16 @@ public class Item : MonoBehaviour
     public Sprite icon;
     public bool pickedUp;
 
+    public GameObject player;
+
+
     public void ItemUsage()
     {
         // health item
-        if (type == "Food")
+        if (type == "Fruit")
         {
-            
+            Debug.Log("Eat Fruit and resture 10hp");
+            player.GetComponent<HealthScript>().RestoreHealth(10f);
         }
     }
 
