@@ -12,18 +12,21 @@ public class DialogStartGamePlay : MonoBehaviour
     private int index;
     public float typingSpeed;
     public GameObject continueButton;
-    public Text tutorialMessage;
+    private bool continueButtonIsOn;
+    public GameObject TutorialTextImage;
+    public TextMeshProUGUI tutorialMessage;
     private int tutorialIndex;
-     
+    private bool tutorialIsOn;
+
     void Start()
     {
         index = 0;
         StartCoroutine(Type());
         continueButton.SetActive(false);
-
-        tutorialMessage.text = "";
-        tutorialIndex = -1;
-
+        TutorialTextImage.SetActive(false);
+        tutorialIndex = 0;
+        tutorialIsOn = false;
+        continueButtonIsOn = false;
     }
 
     void Update()
@@ -31,10 +34,23 @@ public class DialogStartGamePlay : MonoBehaviour
         if (textDisplay.text == sentences[index])
         {
             continueButton.SetActive(true);
+            continueButtonIsOn = true;
         }
-        if(tutorialIndex >= 0 && tutorialIndex < 10)
+        if (continueButtonIsOn)
+        {
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+                NextSentence();
+            }
+        }
+        if (tutorialIsOn)
         {
             StartTutorial();
+            TutorialTextImage.SetActive(true);
+        }
+        else
+        {
+            TutorialTextImage.SetActive(false);
         }
     }
 
@@ -51,6 +67,7 @@ public class DialogStartGamePlay : MonoBehaviour
     public void NextSentence()
     {
         continueButton.SetActive(false);
+        continueButtonIsOn = false;
 
         if (index < sentences.Length - 1)
         {
@@ -61,7 +78,7 @@ public class DialogStartGamePlay : MonoBehaviour
         else
         {
             textDisplay.text = "";
-            tutorialIndex = 0;
+            tutorialIsOn = true;
         }
     }
 
@@ -73,43 +90,38 @@ public class DialogStartGamePlay : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.W))
             {
                 tutorialIndex++;
-                StartTutorial();
             }
         }
         else if (tutorialIndex == 1)
         {
-            tutorialMessage.text = "press A to move Left";
+            tutorialMessage.text = "press A to move left";
             if (Input.GetKeyDown(KeyCode.A))
             {
                 tutorialIndex++;
-                StartTutorial();
             }
         }
         else if (tutorialIndex == 2)
         {
-            tutorialMessage.text = "press D to move Right";
+            tutorialMessage.text = "press D to move right";
             if (Input.GetKeyDown(KeyCode.D))
             {
                 tutorialIndex++;
-                StartTutorial();
             }
         }
         else if (tutorialIndex == 3)
         {
-            tutorialMessage.text = "press S to move Back";
+            tutorialMessage.text = "press S to move back";
             if (Input.GetKeyDown(KeyCode.S))
             {
                 tutorialIndex++;
-                StartTutorial();
             }
         }
         else if (tutorialIndex == 4)
         {
-            tutorialMessage.text = "press SPACE to Jump";
+            tutorialMessage.text = "press SPACE to jump";
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 tutorialIndex++;
-                StartTutorial();
             }
         }
         else if (tutorialIndex == 5)
@@ -118,7 +130,6 @@ public class DialogStartGamePlay : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
                 tutorialIndex++;
-                StartTutorial();
             }
         }
         else if (tutorialIndex == 6)
@@ -127,34 +138,32 @@ public class DialogStartGamePlay : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.C))
             {
                 tutorialIndex++;
-                StartTutorial();
             }
         }
         else if (tutorialIndex == 7)
         {
             tutorialMessage.text = "press 1,2,3,4,5,6 to change weapons";
-            if (Input.GetKeyDown(KeyCode.Alpha1))
+            if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 tutorialIndex++;
-                StartTutorial();
             }
         }
         else if (tutorialIndex == 8)
         {
-            tutorialMessage.text = "press left Mouse button to attack";
+            tutorialMessage.text = "press LEFT MOUSE BUTTON to attack/shot";
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 tutorialIndex++;
-                StartTutorial();
             }
         }
         else if (tutorialIndex == 9)
         {
-            tutorialMessage.text = "press right Mouse button to aim";
+            tutorialMessage.text = "press RIGHT MOUSE BUTTON to aim";
             if (Input.GetKeyDown(KeyCode.Mouse1))
             {
                 tutorialIndex++;
                 tutorialMessage.text = "";
+                tutorialIsOn = false;
             }
         }
     }
