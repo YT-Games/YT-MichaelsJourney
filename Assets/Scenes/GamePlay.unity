@@ -120,7 +120,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: c2250819cdc69124593b6395417a543e, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 9722bb91aaf98ee45b1a5e9a26ad2a44, type: 2}
 --- !u!1 &6687835
 GameObject:
   m_ObjectHideFlags: 0
@@ -2755,7 +2755,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 575765536}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 305.28, y: 115.085, z: 2265.76}
+  m_LocalPosition: {x: 310.612, y: 116.033, z: 2331.164}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1335881418}
@@ -3313,8 +3313,8 @@ MonoBehaviour:
   - {fileID: 575765537}
   tiger_SpawnPoints:
   - {fileID: 1679150975}
-  boar_Count: 3
-  tiger_Count: 1
+  boar_Count: 10
+  tiger_Count: 3
   wait_Before_Spawn: 30
 --- !u!4 &660951458
 Transform:
@@ -6848,7 +6848,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310311192}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 314.0815, y: 114.135, z: 2252.88}
+  m_LocalPosition: {x: 314.93, y: 114.8535, z: 2303.181}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1335881418}
@@ -9821,8 +9821,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677886300}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1049.5918, y: -543.35675, z: -1774.5405}
+  m_LocalRotation: {x: -0.021410666, y: 0.9491705, z: 0.30698526, w: 0.06615928}
+  m_LocalPosition: {x: -572.879, y: -1338.0963, z: 3607.3865}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1525720160}
@@ -9861,7 +9861,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1679150974}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 297.791, y: 118.41, z: 2242.39}
+  m_LocalPosition: {x: 395.1, y: 123.02, z: 2272.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1291956634}
@@ -11687,8 +11687,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1918298261}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1049.5918, y: -362.15677, z: -1774.5405}
+  m_LocalRotation: {x: -0.021410666, y: 0.9491705, z: 0.30698526, w: 0.06615928}
+  m_LocalPosition: {x: -572.879, y: -1156.8964, z: 3607.3865}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1450182525}
@@ -12878,6 +12878,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1295348497, guid: 05883786ae06e1743ba38f443557eccd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.425
+      objectReference: {fileID: 0}
     - target: {fileID: 1664407013, guid: 05883786ae06e1743ba38f443557eccd, type: 3}
       propertyPath: inventory
       value: 
@@ -12896,6 +12900,11 @@ PrefabInstance:
       propertyPath: stamina_Stats
       value: 
       objectReference: {fileID: 443512834}
+    - target: {fileID: 6889761972342329946, guid: 05883786ae06e1743ba38f443557eccd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6889761973460181124, guid: 05883786ae06e1743ba38f443557eccd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12950,6 +12959,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6889761973460181125, guid: 05883786ae06e1743ba38f443557eccd,
+        type: 3}
+      propertyPath: m_Height
+      value: 2.7
       objectReference: {fileID: 0}
     - target: {fileID: 6889761973460181130, guid: 05883786ae06e1743ba38f443557eccd,
         type: 3}
