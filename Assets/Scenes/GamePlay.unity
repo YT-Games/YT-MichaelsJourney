@@ -8831,14 +8831,14 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 32
-  m_textAlignment: 257
+  m_fontStyle: 33
+  m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -9901,7 +9901,8 @@ MonoBehaviour:
   - hi.. where am i ? whats happend.. we where on the ship... and then....
   typingSpeed: 0.05
   continueButton: {fileID: 1581150750}
-  tutorialMessage: {fileID: 0}
+  TutorialTextImage: {fileID: 1777084131}
+  tutorialMessage: {fileID: 1611007258}
 --- !u!4 &1680646098
 Transform:
   m_ObjectHideFlags: 0
