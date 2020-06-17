@@ -162,6 +162,14 @@ public class DialogStartGamePlay : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Mouse1))
             {
                 tutorialIndex++;
+            }
+        }
+        else if (tutorialIndex == 10)
+        {
+            tutorialMessage.text = "press I to open Inventory";
+            if (Input.GetKeyDown(KeyCode.I))
+            {
+                tutorialIndex++;
                 tutorialMessage.text = "";
                 tutorialIsOn = false;
             }
