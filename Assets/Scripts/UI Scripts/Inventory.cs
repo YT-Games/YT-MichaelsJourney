@@ -35,13 +35,27 @@ public class Inventory : MonoBehaviour
         {
             inventoryEnabled = !inventoryEnabled;
         }
+
         if (inventoryEnabled == true)
         {
             inventory.SetActive(true);
+
+            if (Cursor.lockState == CursorLockMode.Locked)
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+
+            }
         }
         else
         {
             inventory.SetActive(false);
+
+            if (Cursor.lockState != CursorLockMode.Locked)
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
         }
     }
     private void OnTriggerEnter(Collider other)

@@ -226,6 +226,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5397527327243071543}
     m_Modifications:
+    - target: {fileID: 363580301, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
+      propertyPath: type
+      value: Fruit
+      objectReference: {fileID: 0}
+    - target: {fileID: 363580301, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
+      propertyPath: description
+      value: Apple can be used to restore Health
+      objectReference: {fileID: 0}
     - target: {fileID: 363580303, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
       propertyPath: m_UseGravity
       value: 1
@@ -321,6 +329,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5397527327243071543}
     m_Modifications:
+    - target: {fileID: 363580301, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
+      propertyPath: type
+      value: Fruit
+      objectReference: {fileID: 0}
+    - target: {fileID: 363580301, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
+      propertyPath: description
+      value: Apple can be used to restore Health
+      objectReference: {fileID: 0}
     - target: {fileID: 363580303, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
       propertyPath: m_UseGravity
       value: 1
@@ -416,6 +432,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5397527327243071543}
     m_Modifications:
+    - target: {fileID: 363580301, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
+      propertyPath: type
+      value: Fruit
+      objectReference: {fileID: 0}
+    - target: {fileID: 363580301, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
+      propertyPath: description
+      value: Apple can be used to restore Health
+      objectReference: {fileID: 0}
     - target: {fileID: 363580303, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
       propertyPath: m_UseGravity
       value: 1
@@ -511,6 +535,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5397527327243071543}
     m_Modifications:
+    - target: {fileID: 363580301, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
+      propertyPath: type
+      value: Fruit
+      objectReference: {fileID: 0}
+    - target: {fileID: 363580301, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
+      propertyPath: description
+      value: Apple can be used to restore Health
+      objectReference: {fileID: 0}
     - target: {fileID: 363580303, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
       propertyPath: m_UseGravity
       value: 1
@@ -606,6 +638,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5397527327243071543}
     m_Modifications:
+    - target: {fileID: 363580301, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
+      propertyPath: type
+      value: Fruit
+      objectReference: {fileID: 0}
+    - target: {fileID: 363580301, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
+      propertyPath: description
+      value: Apple can be used to restore Health
+      objectReference: {fileID: 0}
     - target: {fileID: 363580303, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
       propertyPath: m_UseGravity
       value: 1
@@ -701,6 +741,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5397527327243071543}
     m_Modifications:
+    - target: {fileID: 363580301, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
+      propertyPath: type
+      value: Fruit
+      objectReference: {fileID: 0}
+    - target: {fileID: 363580301, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
+      propertyPath: description
+      value: Apple can be used to restore Health
+      objectReference: {fileID: 0}
     - target: {fileID: 363580303, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
       propertyPath: m_UseGravity
       value: 1
@@ -796,6 +844,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5397527327243071543}
     m_Modifications:
+    - target: {fileID: 363580301, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
+      propertyPath: type
+      value: Fruit
+      objectReference: {fileID: 0}
+    - target: {fileID: 363580301, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
+      propertyPath: description
+      value: Apple can be used to restore Health
+      objectReference: {fileID: 0}
     - target: {fileID: 363580303, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
       propertyPath: m_UseGravity
       value: 1
@@ -891,6 +947,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5397527327243071543}
     m_Modifications:
+    - target: {fileID: 363580301, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
+      propertyPath: type
+      value: Fruit
+      objectReference: {fileID: 0}
+    - target: {fileID: 363580301, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
+      propertyPath: description
+      value: Apple can be used to restore Health
+      objectReference: {fileID: 0}
     - target: {fileID: 363580303, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
       propertyPath: m_UseGravity
       value: 1
@@ -929,15 +993,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4068391342463826, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.6112213
+      value: 1.62
       objectReference: {fileID: 0}
     - target: {fileID: 4068391342463826, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.58
+      value: -1.13
       objectReference: {fileID: 0}
     - target: {fileID: 4068391342463826, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.44
+      value: 2.31
       objectReference: {fileID: 0}
     - target: {fileID: 4068391342463826, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
       propertyPath: m_LocalRotation.x
@@ -986,6 +1050,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5397527327243071543}
     m_Modifications:
+    - target: {fileID: 363580301, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
+      propertyPath: type
+      value: Fruit
+      objectReference: {fileID: 0}
+    - target: {fileID: 363580301, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
+      propertyPath: description
+      value: Apple can be used to restore Health
+      objectReference: {fileID: 0}
     - target: {fileID: 363580303, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
       propertyPath: m_UseGravity
       value: 1
@@ -1081,6 +1153,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5397527327243071543}
     m_Modifications:
+    - target: {fileID: 363580301, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
+      propertyPath: type
+      value: Fruit
+      objectReference: {fileID: 0}
+    - target: {fileID: 363580301, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
+      propertyPath: description
+      value: Apple can be used to restore Health
+      objectReference: {fileID: 0}
     - target: {fileID: 363580303, guid: bfec01bc3e4d0444dbe595b4f55c6730, type: 3}
       propertyPath: m_UseGravity
       value: 1

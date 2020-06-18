@@ -72,8 +72,14 @@ public class HealthScript : MonoBehaviour
         {
             return;
         }
-        health += HPAmount;
-
+        if (health < 100)
+        {
+            health += HPAmount;
+            if (health > 100)
+            {
+                health = 100;
+            }
+        }
         playerStats.DisplayHealthStats(health);
     }
 
@@ -142,7 +148,7 @@ public class HealthScript : MonoBehaviour
 
     void RestartGame()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GamePlay");
     }
 
     void TurnOffGameObject()

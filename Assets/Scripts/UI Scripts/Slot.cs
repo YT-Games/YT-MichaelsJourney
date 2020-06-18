@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
 
-public class Slot : MonoBehaviour
+public class Slot : MonoBehaviour, IPointerClickHandler
 {
     public List<GameObject> items;
     public int ID;
@@ -38,10 +38,29 @@ public class Slot : MonoBehaviour
             amountTMP.text = (items.Count-1).ToString();
             amountTMP.gameObject.SetActive(true);
         }
+        else
+        {
+            amountTMP.gameObject.SetActive(false);
+        }
     }
 
     public void UseItem()
     {
+        Debug.Log("use item");
         items[0].GetComponent<Item>().ItemUsage();
+        if (type == "Fruit")
+        {
+            if (items.Count > 0)
+            {
+                items.RemoveAt(0);
+                UpdateSlot();
+            }
+            else
+            {
+                empty = true;
+
+            }
+
+        }
     }
 }

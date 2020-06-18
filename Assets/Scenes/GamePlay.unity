@@ -2237,27 +2237,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 269787629, guid: 9bb65c13b02bd644fbc680fc82c5c53e, type: 3}
-      propertyPath: type
-      value: Fruit
-      objectReference: {fileID: 0}
-    - target: {fileID: 269787629, guid: 9bb65c13b02bd644fbc680fc82c5c53e, type: 3}
-      propertyPath: description
-      value: Apple can be used to restore Health
-      objectReference: {fileID: 0}
-    - target: {fileID: 269787629, guid: 9bb65c13b02bd644fbc680fc82c5c53e, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1962865703}
-    - target: {fileID: 464988323904464448, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
-        type: 3}
-      propertyPath: type
-      value: Fruit
-      objectReference: {fileID: 0}
-    - target: {fileID: 464988323904464448, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
-        type: 3}
-      propertyPath: description
-      value: Apple can be used to restore Health
-      objectReference: {fileID: 0}
     - target: {fileID: 464988323904464448, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
         type: 3}
       propertyPath: player
@@ -2265,29 +2247,9 @@ PrefabInstance:
       objectReference: {fileID: 1962865703}
     - target: {fileID: 2480885151988904147, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
         type: 3}
-      propertyPath: type
-      value: Fruit
-      objectReference: {fileID: 0}
-    - target: {fileID: 2480885151988904147, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
-        type: 3}
-      propertyPath: description
-      value: Apple can be used to restore Health
-      objectReference: {fileID: 0}
-    - target: {fileID: 2480885151988904147, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
-        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1962865703}
-    - target: {fileID: 2821148108800882811, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
-        type: 3}
-      propertyPath: type
-      value: Fruit
-      objectReference: {fileID: 0}
-    - target: {fileID: 2821148108800882811, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
-        type: 3}
-      propertyPath: description
-      value: Apple can be used to restore Health
-      objectReference: {fileID: 0}
     - target: {fileID: 2821148108800882811, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
         type: 3}
       propertyPath: player
@@ -2295,29 +2257,9 @@ PrefabInstance:
       objectReference: {fileID: 1962865703}
     - target: {fileID: 3256278386719921338, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
         type: 3}
-      propertyPath: type
-      value: Fruit
-      objectReference: {fileID: 0}
-    - target: {fileID: 3256278386719921338, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
-        type: 3}
-      propertyPath: description
-      value: Apple can be used to restore Health
-      objectReference: {fileID: 0}
-    - target: {fileID: 3256278386719921338, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
-        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1962865703}
-    - target: {fileID: 4439802231023748498, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
-        type: 3}
-      propertyPath: type
-      value: Fruit
-      objectReference: {fileID: 0}
-    - target: {fileID: 4439802231023748498, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
-        type: 3}
-      propertyPath: description
-      value: Apple can be used to restore Health
-      objectReference: {fileID: 0}
     - target: {fileID: 4439802231023748498, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
         type: 3}
       propertyPath: player
@@ -2325,29 +2267,9 @@ PrefabInstance:
       objectReference: {fileID: 1962865703}
     - target: {fileID: 4472825403331555816, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
         type: 3}
-      propertyPath: type
-      value: Fruit
-      objectReference: {fileID: 0}
-    - target: {fileID: 4472825403331555816, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
-        type: 3}
-      propertyPath: description
-      value: Apple can be used to restore Health
-      objectReference: {fileID: 0}
-    - target: {fileID: 4472825403331555816, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
-        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1962865703}
-    - target: {fileID: 5135360132777271928, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
-        type: 3}
-      propertyPath: type
-      value: Fruit
-      objectReference: {fileID: 0}
-    - target: {fileID: 5135360132777271928, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
-        type: 3}
-      propertyPath: description
-      value: Apple can be used to restore Health
-      objectReference: {fileID: 0}
     - target: {fileID: 5135360132777271928, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
         type: 3}
       propertyPath: player
@@ -2415,29 +2337,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7381968862952472135, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
         type: 3}
-      propertyPath: type
-      value: Fruit
-      objectReference: {fileID: 0}
-    - target: {fileID: 7381968862952472135, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
-        type: 3}
-      propertyPath: description
-      value: Apple can be used to restore Health
-      objectReference: {fileID: 0}
-    - target: {fileID: 7381968862952472135, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
-        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1962865703}
-    - target: {fileID: 8676038588149455182, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
-        type: 3}
-      propertyPath: type
-      value: Fruit
-      objectReference: {fileID: 0}
-    - target: {fileID: 8676038588149455182, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
-        type: 3}
-      propertyPath: description
-      value: Apple can be used to restore Health
-      objectReference: {fileID: 0}
     - target: {fileID: 8676038588149455182, guid: 9bb65c13b02bd644fbc680fc82c5c53e,
         type: 3}
       propertyPath: player
@@ -13953,8 +13855,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677886300}
-  m_LocalRotation: {x: -0.011928976, y: 0.9784351, z: 0.19763055, w: 0.058861148}
-  m_LocalPosition: {x: 102.33056, y: 1.4220581, z: 1416.4514}
+  m_LocalRotation: {x: 0.034325536, y: -0.9655216, z: -0.17150134, w: -0.19281374}
+  m_LocalPosition: {x: 97.60577, y: 13.582773, z: 1408.6732}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1525720160}
@@ -16126,8 +16028,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1918298261}
-  m_LocalRotation: {x: -0.011928976, y: 0.9784351, z: 0.19763055, w: 0.058861148}
-  m_LocalPosition: {x: 204.66112, y: 182.62206, z: 2832.9028}
+  m_LocalRotation: {x: 0.034325536, y: -0.9655216, z: -0.17150134, w: -0.19281374}
+  m_LocalPosition: {x: 195.21153, y: 194.78278, z: 2817.3464}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1450182525}
@@ -17653,6 +17555,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 137043067, guid: 05883786ae06e1743ba38f443557eccd, type: 3}
+      propertyPath: move_Speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 137043067, guid: 05883786ae06e1743ba38f443557eccd, type: 3}
+      propertyPath: sprint_Speed
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 137043067, guid: 05883786ae06e1743ba38f443557eccd, type: 3}
+      propertyPath: crouch_Speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1295348497, guid: 05883786ae06e1743ba38f443557eccd, type: 3}
       propertyPath: m_LocalPosition.y
       value: 2.425
