@@ -47,20 +47,18 @@ public class Slot : MonoBehaviour, IPointerClickHandler
     public void UseItem()
     {
         Debug.Log("use item");
-        items[0].GetComponent<Item>().ItemUsage();
         if (type == "Fruit")
         {
-            if (items.Count > 0)
+            if (items.Count-1 > 0)
             {
+                items[0].GetComponent<Item>().ItemUsage();
                 items.RemoveAt(0);
-                UpdateSlot();
             }
             else
             {
                 empty = true;
-
             }
-
+            UpdateSlot();
         }
     }
 }

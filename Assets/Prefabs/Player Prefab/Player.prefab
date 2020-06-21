@@ -72,7 +72,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1295348496}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.525, z: 0.898}
+  m_LocalPosition: {x: 0, y: 2.425, z: 0.898}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6889761973460181124}
@@ -141,7 +141,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6889761972342329947}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.6, z: 0}
+  m_LocalPosition: {x: 0, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6889761972547497073}
@@ -426,11 +426,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6889761972538167706}
+  - {fileID: 6889761971787831045}
+  - {fileID: 6889761972053725826}
   - {fileID: 6889761972825111151}
   - {fileID: 6889761973093624483}
   - {fileID: 6889761973453333482}
-  - {fileID: 6889761972053725826}
-  - {fileID: 6889761971787831045}
   m_Father: {fileID: 6889761972342329946}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1011,7 +1011,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.8
+  m_Height: 2.7
   m_Radius: 0.35
   m_SlopeLimit: 55
   m_StepOffset: 0.2
@@ -1044,9 +1044,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49787f03f3b41a14090cd9cece4f8dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprint_Speed: 8
-  move_Speed: 4
-  crouch_Speed: 1.5
+  sprint_Speed: 12
+  move_Speed: 8
+  crouch_Speed: 3
 --- !u!114 &6480658536455918696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1066,6 +1066,12 @@ MonoBehaviour:
   - {fileID: 5632176103731109516}
   - {fileID: 825745110672812041}
   - {fileID: 2166823876228007397}
+  axe: 0
+  revolver: 0
+  shotgun: 0
+  assaultRifle: 0
+  spear: 0
+  bow: 0
 --- !u!114 &235757572680719795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1395,7 +1401,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100048, guid: 9ba50ff5806385f4da160695a7223e1d, type: 3}
       propertyPath: m_Name
-      value: 6- Wooden Bow
+      value: Wooden Bow
       objectReference: {fileID: 0}
     - target: {fileID: 100048, guid: 9ba50ff5806385f4da160695a7223e1d, type: 3}
       propertyPath: m_Layer
@@ -1647,7 +1653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400048, guid: 9ba50ff5806385f4da160695a7223e1d, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400048, guid: 9ba50ff5806385f4da160695a7223e1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1748,7 +1754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100026, guid: f01a880f7473c2546b3ff80815537299, type: 3}
       propertyPath: m_Name
-      value: 5- Wooden Spear
+      value: Wooden Spear
       objectReference: {fileID: 0}
     - target: {fileID: 100026, guid: f01a880f7473c2546b3ff80815537299, type: 3}
       propertyPath: m_Layer
@@ -1948,7 +1954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400026, guid: f01a880f7473c2546b3ff80815537299, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400026, guid: f01a880f7473c2546b3ff80815537299, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2025,7 +2031,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100014, guid: ded3362b8b3b82243b3043bb355c770c, type: 3}
       propertyPath: m_Name
-      value: 1- Axe
+      value: Axe
       objectReference: {fileID: 0}
     - target: {fileID: 100014, guid: ded3362b8b3b82243b3043bb355c770c, type: 3}
       propertyPath: m_Layer
@@ -2769,6 +2775,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3336d43058b91ea4aa0f2e2b1c27eb2d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ded3362b8b3b82243b3043bb355c770c, type: 3}
+--- !u!4 &6889761972538167704 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400012, guid: ded3362b8b3b82243b3043bb355c770c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6889761972538559252}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6889761972538461626 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100014, guid: ded3362b8b3b82243b3043bb355c770c,
@@ -2778,12 +2790,6 @@ GameObject:
 --- !u!4 &6889761972538167706 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400014, guid: ded3362b8b3b82243b3043bb355c770c,
-    type: 3}
-  m_PrefabInstance: {fileID: 6889761972538559252}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &6889761972538167704 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400012, guid: ded3362b8b3b82243b3043bb355c770c,
     type: 3}
   m_PrefabInstance: {fileID: 6889761972538559252}
   m_PrefabAsset: {fileID: 0}
@@ -2924,7 +2930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100028, guid: 2bd6bf150a6e08645964bd2baf2a789b, type: 3}
       propertyPath: m_Name
-      value: 2- Revolver
+      value: Revolver
       objectReference: {fileID: 0}
     - target: {fileID: 100028, guid: 2bd6bf150a6e08645964bd2baf2a789b, type: 3}
       propertyPath: m_Layer
@@ -3332,7 +3338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 2bd6bf150a6e08645964bd2baf2a789b, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 2bd6bf150a6e08645964bd2baf2a789b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4013,7 +4019,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100026, guid: 1b1e15712c094a1409abf2c70f7e2703, type: 3}
       propertyPath: m_Name
-      value: 3- Shotgun
+      value: Shotgun
       objectReference: {fileID: 0}
     - target: {fileID: 100026, guid: 1b1e15712c094a1409abf2c70f7e2703, type: 3}
       propertyPath: m_Layer
@@ -4221,7 +4227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400026, guid: 1b1e15712c094a1409abf2c70f7e2703, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400026, guid: 1b1e15712c094a1409abf2c70f7e2703, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4249,15 +4255,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 626b338dd308a9d478ff8780feca87c7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b1e15712c094a1409abf2c70f7e2703, type: 3}
---- !u!4 &6889761973093624483 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400026, guid: 1b1e15712c094a1409abf2c70f7e2703,
-    type: 3}
-  m_PrefabInstance: {fileID: 6889761973093494841}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6889761973093463683 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100026, guid: 1b1e15712c094a1409abf2c70f7e2703,
+    type: 3}
+  m_PrefabInstance: {fileID: 6889761973093494841}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6889761973093624483 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400026, guid: 1b1e15712c094a1409abf2c70f7e2703,
     type: 3}
   m_PrefabInstance: {fileID: 6889761973093494841}
   m_PrefabAsset: {fileID: 0}
@@ -4474,7 +4480,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100030, guid: 48d42201fa1ddd74b8df820204882ede, type: 3}
       propertyPath: m_Name
-      value: 4- Assault Rifle
+      value: Assault Rifle
       objectReference: {fileID: 0}
     - target: {fileID: 100030, guid: 48d42201fa1ddd74b8df820204882ede, type: 3}
       propertyPath: m_Layer
@@ -4662,7 +4668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400030, guid: 48d42201fa1ddd74b8df820204882ede, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400030, guid: 48d42201fa1ddd74b8df820204882ede, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -35,15 +35,13 @@ public class PlayerAttack : MonoBehaviour
         mainCam = Camera.main;
     }
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
-        WeaponShoot();
-        ZoomInAndOut();
+        if (Cursor.lockState == CursorLockMode.Locked)
+        {
+            WeaponShoot();
+            ZoomInAndOut();
+        }
     }
 
     void WeaponShoot()

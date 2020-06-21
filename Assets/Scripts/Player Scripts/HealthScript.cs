@@ -154,6 +154,7 @@ public class HealthScript : MonoBehaviour
     void TurnOffGameObject()
     {
         gameObject.SetActive(false);
+        Destroy(this.gameObject);
     }
 
     IEnumerator DeadSound()
