@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5381cd740d674524b8f71d1a2d8ee18e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 10
   radius: 1
   layerMask:
     serializedVersion: 2
@@ -1064,9 +1064,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773d11e8c28a134a84284aa90ee65af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 1.5
-  runSpeed: 5
-  chase_Distance: 7
+  walkSpeed: 3
+  runSpeed: 10
+  chase_Distance: 10
   attack_Distance: 2.4
   chase_After_Attack_Distance: 1
   patrol_Radius_Min: 20
