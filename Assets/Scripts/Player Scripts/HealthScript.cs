@@ -6,6 +6,8 @@ using UnityEngine.AI;
 public class HealthScript : MonoBehaviour
 {
 
+    private GameObject dialogManager;
+
     private EnemyAnimator enemyAnim;
     private NavMeshAgent navAgent;
     private EnemyController enemyController;
@@ -36,6 +38,8 @@ public class HealthScript : MonoBehaviour
         {
             playerStats = GetComponent<PlayerStats>();
         }
+
+        dialogManager = GameObject.Find("/UI Canvas/Tutorial/Dialog Manager");
     }
 
     public void ApplyDamage(float damage)
@@ -96,6 +100,8 @@ public class HealthScript : MonoBehaviour
             navAgent.enabled = false;
             enemyAnim.enabled = false;
 
+            dialogManager.GetComponent<DialogStartGamePlay>().killBoarsCounter++;
+
             // StartCoroutine
             StartCoroutine(DeadSound());
 
@@ -112,6 +118,8 @@ public class HealthScript : MonoBehaviour
             enemyController.enabled = false;
 
             enemyAnim.Dead();
+
+            dialogManager.GetComponent<DialogStartGamePlay>().killBoarsCounter++;
 
             // StartCoroutine
             StartCoroutine(DeadSound());

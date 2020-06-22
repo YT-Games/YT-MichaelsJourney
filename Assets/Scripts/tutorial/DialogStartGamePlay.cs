@@ -32,7 +32,9 @@ public class DialogStartGamePlay : MonoBehaviour
     public Boolean once;
 
     private float xHightOffset = 20f;
-    public int killBoars;
+
+    [HideInInspector]
+    public int killBoarsCounter;
 
     private GameObject player;
 
@@ -43,7 +45,7 @@ public class DialogStartGamePlay : MonoBehaviour
         continueButton.SetActive(false);
         TutorialTextImage.SetActive(false);
 
-        tutorialIndex = 14;
+        tutorialIndex = 15;
         tutorialIsOn = false;
         continueButtonIsOn = false;
 
@@ -51,7 +53,7 @@ public class DialogStartGamePlay : MonoBehaviour
 
         endConWithKneski = false;
 
-        killBoars = 0;
+        killBoarsCounter = 0;
 
         player = GameObject.Find("/Player");
         kneski = GameObject.Find("/Kneski");
@@ -70,6 +72,10 @@ public class DialogStartGamePlay : MonoBehaviour
             {
                 NextSentence();
             }
+        }
+        if (tutorialIndex == 15)
+        {
+            tutorialMessage.text = "Task 5: kill 10 boars, you killed: " + killBoarsCounter + "/10";
         }
         if (tutorialIsOn)
         {
@@ -277,7 +283,6 @@ public class DialogStartGamePlay : MonoBehaviour
                 X.transform.position = kneskiPos;
                 X.SetActive(true);
                 tutorialMessage.text = "Task 4: Keep follow the road, maybe we will find someone..";
-
                 once = true;
             }
 
@@ -294,19 +299,38 @@ public class DialogStartGamePlay : MonoBehaviour
             if (once == false)
             {
                 player.GetComponent<PlayerMovement>().enabled = true;
-                this.GetComponentInChildren<MouseLook>().enabled = true;
-                this.GetComponentInChildren<PlayerFootsteps>().enabled = true;
+                player.GetComponentInChildren<MouseLook>().enabled = true;
+                player.GetComponentInChildren<PlayerFootsteps>().enabled = true;
 
                 player.GetComponent<WeaponManager>().bow = true;
                 player.GetComponent<WeaponManager>().TurnOnSelectedWeapon(1);
-                tutorialMessage.text = "Task 5: kill 10 boars and return to kneski";
+
+
                 once = true;
             }
-            else if (killBoars == 10)
+            else if (killBoarsCounter == 10)
+            {
+                tutorialMessage.text = "Task 5: perfect !! return to Kneski";
+                endConWithKneski = false;
+                if (endConWithKneski)
+                {
+                    once = false;
+                    tutorialIndex++;
+                }
+                
+            }
+        }
+        else if (tutorialIndex == 16)
+        {
+            if (once == false)
+            {
+
+            }
+            else if (true)
             {
                 tutorialMessage.text = "";
                 tutorialIsOn = false;
             }
         }
-    }
+     }
 }

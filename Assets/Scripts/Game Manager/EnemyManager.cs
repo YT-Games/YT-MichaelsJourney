@@ -9,6 +9,7 @@ public class EnemyManager : MonoBehaviour
     [SerializeField]
     private GameObject boar_Prefab, tiger_Prefab;
 
+
     public Transform[] boar_SpawnPoints, tiger_SpawnPoints;
 
     [SerializeField]
@@ -17,6 +18,8 @@ public class EnemyManager : MonoBehaviour
     private int init_Boar_Count, init_Tiger_Count;
 
     public float wait_Before_Spawn = 10f;
+
+    public GameObject X;
 
 
 
@@ -59,6 +62,10 @@ public class EnemyManager : MonoBehaviour
                 index = 0;
             }
             Instantiate(boar_Prefab, boar_SpawnPoints[index].position, Quaternion.identity);
+            Vector3 boarPos = new Vector3(boar_Prefab.transform.position.x,
+                                            boar_Prefab.transform.position.y + 20f,
+                                                boar_Prefab.transform.position.z);
+            Instantiate(X, boarPos, X.transform.rotation);
             index++;
         }
         boar_Count = 0;
