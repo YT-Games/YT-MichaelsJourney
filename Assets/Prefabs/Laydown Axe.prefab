@@ -447,9 +447,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5173383525812976951}
   - component: {fileID: 5173383525803905753}
+  - component: {fileID: 1218626687}
+  - component: {fileID: 1218626688}
+  - component: {fileID: 1218626689}
   m_Layer: 0
   m_Name: Laydown Axe
-  m_TagString: Untagged
+  m_TagString: Axe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -461,7 +464,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5173383525813395735}
-  m_LocalRotation: {x: 0.6330062, y: 0.31512403, z: -0.31512403, w: -0.6330062}
+  m_LocalRotation: {x: 0.6330068, y: 0.315123, z: -0.31512275, w: -0.6330067}
   m_LocalPosition: {x: 1.6085963, y: 0.35560167, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
@@ -489,6 +492,48 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!54 &1218626687
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5173383525813395735}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1218626688
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5173383525813395735}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1032664, y: 0.6747233, z: 0.11163338}
+  m_Center: {x: 0.120428726, y: 1.2704095, z: 0.65587294}
+--- !u!65 &1218626689
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5173383525813395735}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.529316, y: 1.2283533, z: 1}
+  m_Center: {x: -0.26465797, y: 1.4546947, z: -2.3256513e-14}
 --- !u!1 &5173383525813395737
 GameObject:
   m_ObjectHideFlags: 0

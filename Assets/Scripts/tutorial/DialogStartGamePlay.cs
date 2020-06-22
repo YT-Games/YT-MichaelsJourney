@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class DialogStartGamePlay : MonoBehaviour
 {
@@ -20,15 +21,23 @@ public class DialogStartGamePlay : MonoBehaviour
     public GameObject X;
     public GameObject axe;
 
+    public Boolean once;
+
+    private GameObject player;
+
     void Start()
     {
         index = 0;
         StartCoroutine(Type());
         continueButton.SetActive(false);
         TutorialTextImage.SetActive(false);
-        tutorialIndex = 0;
+        tutorialIndex = 11;
         tutorialIsOn = false;
         continueButtonIsOn = false;
+
+        once = false;
+
+        player = GameObject.Find("/Player");
     }
 
     void Update()
@@ -176,13 +185,26 @@ public class DialogStartGamePlay : MonoBehaviour
         }
         else if (tutorialIndex == 11)
         {
-            Instantiate(X, axe.transform.position, X.transform.rotation);
-            tutorialMessage.text = "Task 1: find the AXE near the big rock";
-            if (false)
+            if (player.GetComponent<WeaponManager>().axe == false && once == false)
+            {
+                Vector3 axePos = new Vector3(axe.transform.position.x,
+                                            axe.transform.position.y + 10f,
+                                                axe.transform.position.z);
+                X.transform.position = axePos;
+                X.SetActive(true);
+                tutorialMessage.text = "Task 1: find the AXE near the big rock";
+
+                once = true;
+            }
+            Debug.Log(player.GetComponent<WeaponManager>().axe);
+            if (player.GetComponent<WeaponManager>().axe == true)
             {
                 tutorialIndex++;
                 tutorialMessage.text = "";
                 tutorialIsOn = false;
+                X.SetActive(false);
+
+                once = false;
             }
         }
     }
