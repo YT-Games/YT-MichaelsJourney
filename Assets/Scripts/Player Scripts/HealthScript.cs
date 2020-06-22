@@ -14,7 +14,8 @@ public class HealthScript : MonoBehaviour
 
     public bool is_Player, is_Boar, is_Tiger;
 
-    private bool is_Dead;
+    [HideInInspector]
+    public bool is_Dead;
 
     private EnemyAudio enemyAudio;
 

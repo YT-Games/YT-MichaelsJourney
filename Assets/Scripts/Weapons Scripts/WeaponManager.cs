@@ -9,14 +9,13 @@ public class WeaponManager : MonoBehaviour
     private WeaponHandler[] weapons;
 
     [HideInInspector]
-    public Boolean axe, revolver, shotgun, assaultRifle, spear, bow = false;
+    public Boolean axe, bow, spear, revolver, shotgun, assaultRifle = false;
 
     private int currentWeaponIndex;
 
     void Start()
     {
         currentWeaponIndex = 0;
-        //weapons[currentWeaponIndex].gameObject.SetActive(true);
     }
 
     void Update()
@@ -47,7 +46,7 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
-    void TurnOnSelectedWeapon(int weaponIndex)
+    public void TurnOnSelectedWeapon(int weaponIndex)
     {
         if (currentWeaponIndex == weaponIndex)
         {
