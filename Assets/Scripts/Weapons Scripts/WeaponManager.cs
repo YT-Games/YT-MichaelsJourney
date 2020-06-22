@@ -65,4 +65,15 @@ public class WeaponManager : MonoBehaviour
         return weapons[currentWeaponIndex];
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Axe")
+        {
+            Destroy(other.gameObject);
+            axe = true;
+            currentWeaponIndex = 0;
+            weapons[currentWeaponIndex].gameObject.SetActive(true);
+        }
+    }
+
 }

@@ -17,6 +17,8 @@ public class DialogStartGamePlay : MonoBehaviour
     public TextMeshProUGUI tutorialMessage;
     private int tutorialIndex;
     private bool tutorialIsOn;
+    public GameObject X;
+    public GameObject axe;
 
     void Start()
     {
@@ -168,6 +170,15 @@ public class DialogStartGamePlay : MonoBehaviour
         {
             tutorialMessage.text = "press I to open Inventory";
             if (Input.GetKeyDown(KeyCode.I))
+            {
+                tutorialIndex++;
+            }
+        }
+        else if (tutorialIndex == 11)
+        {
+            Instantiate(X, axe.transform.position, X.transform.rotation);
+            tutorialMessage.text = "Task 1: find the AXE near the big rock";
+            if (false)
             {
                 tutorialIndex++;
                 tutorialMessage.text = "";
