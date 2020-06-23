@@ -510,8 +510,8 @@ Transform:
   m_Children:
   - {fileID: 6889761972538167706}
   - {fileID: 6889761971787831045}
-  - {fileID: 6889761972053725826}
   - {fileID: 6889761972825111151}
+  - {fileID: 6889761972053725826}
   - {fileID: 6889761973093624483}
   - {fileID: 6889761973453333482}
   m_Father: {fileID: 6889761972342329946}
@@ -1151,11 +1151,11 @@ MonoBehaviour:
   - {fileID: 6516399246144183113}
   - {fileID: 5632176103731109516}
   axe: 0
+  bow: 0
+  spear: 0
   revolver: 0
   shotgun: 0
   assaultRifle: 0
-  spear: 0
-  bow: 0
 --- !u!114 &235757572680719795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1191,6 +1191,7 @@ MonoBehaviour:
   is_Player: 1
   is_Boar: 0
   is_Tiger: 0
+  is_Dead: 0
 --- !u!114 &2545136731355567343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2038,7 +2039,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400026, guid: f01a880f7473c2546b3ff80815537299, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400026, guid: f01a880f7473c2546b3ff80815537299, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3422,7 +3423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 2bd6bf150a6e08645964bd2baf2a789b, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 2bd6bf150a6e08645964bd2baf2a789b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class DialogWithKneski : MonoBehaviour
 {
@@ -14,9 +15,10 @@ public class DialogWithKneski : MonoBehaviour
     public GameObject kneskiTextImage;
     public GameObject dialogManager;
 
+
     private void Start()
     {
-        index = 0;
+        index = 10;
         StartCoroutine(Type());
         continueButton.SetActive(false);
         kneskiTextImage.SetActive(true);
@@ -44,20 +46,21 @@ public class DialogWithKneski : MonoBehaviour
         continueButton.SetActive(false);
         continueButtonIsOn = false;
 
-        if (index < sentences.Length - 1)
-        {
-            index++;
-            textDisplay.text = "";
-            StartCoroutine(Type());
-        }
-        else
-        {
-            kneskiTextImage.SetActive(false);
-            dialogManager.SetActive(true);
-            textDisplay.text = "";
-            dialogManager.GetComponent<DialogStartGamePlay>().TutorialTextImage.SetActive(false);
-            dialogManager.GetComponent<DialogStartGamePlay>().endConWithKneski = true;
-        }
+            if (index < sentences.Length - 1)
+            {
+                index++;
+                textDisplay.text = "";
+                StartCoroutine(Type());
+            }
+            else
+            {
+                kneskiTextImage.SetActive(false);
+                dialogManager.SetActive(true);
+                textDisplay.text = "";
+                dialogManager.GetComponent<DialogStartGamePlay>().TutorialTextImage.SetActive(false);
+                dialogManager.GetComponent<DialogStartGamePlay>().endConWithKneski = true;
+            }
+        
     }
 
     IEnumerator Type()

@@ -28,11 +28,11 @@ public class WeaponManager : MonoBehaviour
         {
             TurnOnSelectedWeapon(1);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3) && (spear == true))
+        if (Input.GetKeyDown(KeyCode.Alpha3) && (revolver == true))
         {
             TurnOnSelectedWeapon(2);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha4) && (revolver == true))
+        if (Input.GetKeyDown(KeyCode.Alpha4) && (spear == true))
         {
             TurnOnSelectedWeapon(3);
         }

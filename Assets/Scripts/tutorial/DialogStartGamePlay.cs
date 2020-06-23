@@ -34,9 +34,10 @@ public class DialogStartGamePlay : MonoBehaviour
     private float xHightOffset = 20f;
 
     [HideInInspector]
-    public int killBoarsCounter;
+    public int killBoarsCounter, killTigerCounter;
 
     private GameObject player;
+    public GameObject direction;
 
     void Start()
     {
@@ -45,7 +46,7 @@ public class DialogStartGamePlay : MonoBehaviour
         continueButton.SetActive(false);
         TutorialTextImage.SetActive(false);
 
-        tutorialIndex = 15;
+        tutorialIndex = 14;
         tutorialIsOn = false;
         continueButtonIsOn = false;
 
@@ -53,7 +54,8 @@ public class DialogStartGamePlay : MonoBehaviour
 
         endConWithKneski = false;
 
-        killBoarsCounter = 0;
+        killBoarsCounter = 9;
+        killTigerCounter = 2;
 
         player = GameObject.Find("/Player");
         kneski = GameObject.Find("/Kneski");
@@ -75,7 +77,17 @@ public class DialogStartGamePlay : MonoBehaviour
         }
         if (tutorialIndex == 15)
         {
-            tutorialMessage.text = "Task 5: kill 10 boars, you killed: " + killBoarsCounter + "/10";
+            if(killBoarsCounter <= 10)
+            {
+                tutorialMessage.text = "Task 5: kill 10 Boars, you killed: " + killBoarsCounter + "/10";
+            }
+        }
+        if (tutorialIndex == 16)
+        {
+            if (killTigerCounter <= 3)
+            {
+                tutorialMessage.text = "Task 6: kill 3 Tigers, you killed: " + killTigerCounter + "/3";
+            }
         }
         if (tutorialIsOn)
         {
@@ -305,15 +317,26 @@ public class DialogStartGamePlay : MonoBehaviour
                 player.GetComponent<WeaponManager>().bow = true;
                 player.GetComponent<WeaponManager>().TurnOnSelectedWeapon(1);
 
+                direction.SetActive(true);
+
+                endConWithKneski = false;
 
                 once = true;
             }
             else if (killBoarsCounter == 10)
             {
                 tutorialMessage.text = "Task 5: perfect !! return to Kneski";
-                endConWithKneski = false;
-                if (endConWithKneski)
+                player.GetComponent<PlayerTriggers>().convNumber = 2;
+                if (endConWithKneski == true)
                 {
+                    player.GetComponent<PlayerMovement>().enabled = true;
+                    player.GetComponentInChildren<MouseLook>().enabled = true;
+                    player.GetComponentInChildren<PlayerFootsteps>().enabled = true;
+
+                    player.GetComponent<WeaponManager>().revolver = true;
+                    player.GetComponent<WeaponManager>().TurnOnSelectedWeapon(2);
+
+                    endConWithKneski = false;
                     once = false;
                     tutorialIndex++;
                 }
@@ -322,15 +345,19 @@ public class DialogStartGamePlay : MonoBehaviour
         }
         else if (tutorialIndex == 16)
         {
-            if (once == false)
+            if (killTigerCounter == 3)
             {
+                tutorialMessage.text = "Task 6: Amazing !! return to Kneski";
+                player.GetComponent<PlayerTriggers>().convNumber = 3;
+                if (endConWithKneski == true)
+                {
+                    endConWithKneski = false;
+                    tutorialMessage.text = "";
+                    tutorialIsOn = false;
+                }
+            }
+            
 
-            }
-            else if (true)
-            {
-                tutorialMessage.text = "";
-                tutorialIsOn = false;
-            }
         }
      }
 }

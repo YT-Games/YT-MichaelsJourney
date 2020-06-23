@@ -8,7 +8,7 @@ public class PlayerAttack : MonoBehaviour
 
     public float fireRate = 15f;
     private float nextTimeToFire;
-    public float damage = 20f;
+    public float damage = 50f;
 
     private Animator zoomCameraAnim;
     private bool zoomed;

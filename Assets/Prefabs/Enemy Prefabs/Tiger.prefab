@@ -7130,10 +7130,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e026f6cac22eac64c9954ffc9d96b9dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 500
   is_Player: 0
   is_Boar: 0
   is_Tiger: 1
+  is_Dead: 0
 --- !u!65 &3176329631010781301
 BoxCollider:
   m_ObjectHideFlags: 0

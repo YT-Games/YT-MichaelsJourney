@@ -100,7 +100,7 @@ public class HealthScript : MonoBehaviour
             navAgent.enabled = false;
             enemyAnim.enabled = false;
 
-            dialogManager.GetComponent<DialogStartGamePlay>().killBoarsCounter++;
+            dialogManager.GetComponent<DialogStartGamePlay>().killTigerCounter++;
 
             // StartCoroutine
             StartCoroutine(DeadSound());
