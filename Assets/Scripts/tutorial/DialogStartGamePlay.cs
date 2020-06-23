@@ -349,7 +349,7 @@ public class DialogStartGamePlay : MonoBehaviour
                 player.GetComponent<PlayerTriggers>().convNumber = 3;
                 if (endConWithKneski == true)
                 {
-                    SceneManager.LoadScene("EndGame");
+                    SceneManager.LoadScene("EndScene");
                     endConWithKneski = false;
                     tutorialMessage.text = "";
                     tutorialIsOn = false;

@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.23584908, g: 0.6933342, b: 1, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.0015
@@ -16428,7 +16428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1781658326}
   sentences:
-  - 'Michael: I killed 3 wild boars as you requested'
+  - 'Michael: I killed 10 wild boars as you requested'
   - 'Kneski: Nice, but wild boars are easy. We''ll see you deal with the real thing
     ..'
   - 'Michael: The real thing? sounds scary..'
@@ -20536,7 +20536,7 @@ MonoBehaviour:
     yourself and save yourself from the island?'
   - 'Kneski: I found the bullets in a wreck when I was already on the island for
     a long time ..., now I''m connected to this place.'
-  - 'Michael: Ty you very much you saved me !'
+  - 'Michael: Thank you very much ! you saved me !'
   typingSpeed: 0.0001
   continueButton: {fileID: 517130000}
   kneskiTextImage: {fileID: 1852612720}
@@ -22924,8 +22924,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1918298261}
-  m_LocalRotation: {x: -0.37964073, y: 0.33034363, z: 0.14829393, w: 0.8513254}
-  m_LocalPosition: {x: 223.98923, y: -368.181, z: 2141.3015}
+  m_LocalRotation: {x: -0.32809865, y: 0.0036598442, z: 0.0023029328, w: 0.94463354}
+  m_LocalPosition: {x: 651.8825, y: -50.874542, z: 2079.0288}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1450182525}
@@ -24758,8 +24758,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104594700}
-  m_LocalRotation: {x: -0.09632481, y: 0.59442025, z: 0.073235676, w: 0.7949985}
-  m_LocalPosition: {x: 635.98395, y: -86.56828, z: 2322.905}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 265, y: 13.439999, z: 2825.9}
   m_LocalScale: {x: 1, y: 0.8305768, z: 1.1135746}
   m_Children: []
   m_Father: {fileID: 0}
