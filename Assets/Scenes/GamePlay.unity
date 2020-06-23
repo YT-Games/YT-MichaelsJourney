@@ -16432,14 +16432,11 @@ MonoBehaviour:
   - 'Kneski: Nice, but wild boars are easy. We''ll see you deal with the real thing
     ..'
   - 'Michael: The real thing? sounds scary..'
-  - 'Kneski: There is a group of leopards in the hunting area where you hunted the
+  - 'Kneski: There is a group of Tigers in the hunting area where you hunted the
     wild boar.'
   - 'Kneski: Kill 3 of them and I''ll help you'
   - 'Michael: Ok i''ll try my best, but with my bow its not gonna be easy..'
   - 'Kneski: No problem, for that mission i have somthing else to give you'
-  - 'Kneski: Take this Pistol, he will help you not to die, but still, be careful..'
-  - 'Kneski: Take this Pistol, he will help you not to die, but still, be careful..'
-  - 'Kneski: Take this Pistol, he will help you not to die, but still, be careful..'
   - 'Kneski: Take this Pistol, he will help you not to die, but still, be careful..'
   typingSpeed: 0.0001
   continueButton: {fileID: 517130000}
@@ -20538,12 +20535,8 @@ MonoBehaviour:
   - 'Michael: But, if you have this light bullets.. Why didn''t you sign the ships
     yourself and save yourself from the island?'
   - 'Kneski: I found the bullets in a wreck when I was already on the island for
-    a long time ..., now I''m connected to the island.'
-  - 'Kneski: If you want you can take your time to see this island for your self,
-    and when you ready just come to me and i will give you the bullets.'
-  - 
-  - 
-  - 
+    a long time ..., now I''m connected to this place.'
+  - 'Michael: Ty you very much you saved me !'
   typingSpeed: 0.0001
   continueButton: {fileID: 517130000}
   kneskiTextImage: {fileID: 1852612720}
@@ -22931,8 +22924,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1918298261}
-  m_LocalRotation: {x: 0.19556674, y: 0.7306796, z: 0.23263101, w: -0.61134595}
-  m_LocalPosition: {x: 192.5903, y: 49.944733, z: 2244.3171}
+  m_LocalRotation: {x: -0.37964073, y: 0.33034363, z: 0.14829393, w: 0.8513254}
+  m_LocalPosition: {x: 223.98923, y: -368.181, z: 2141.3015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1450182525}
@@ -24765,8 +24758,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104594700}
-  m_LocalRotation: {x: 0.19556674, y: 0.7306796, z: 0.23263101, w: -0.61134595}
-  m_LocalPosition: {x: 192.5903, y: -131.25526, z: 2244.3171}
+  m_LocalRotation: {x: -0.09632481, y: 0.59442025, z: 0.073235676, w: 0.7949985}
+  m_LocalPosition: {x: 635.98395, y: -86.56828, z: 2322.905}
   m_LocalScale: {x: 1, y: 0.8305768, z: 1.1135746}
   m_Children: []
   m_Father: {fileID: 0}

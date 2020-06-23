@@ -60,7 +60,7 @@ public class DialogStartGamePlay : MonoBehaviour
 
         endConWithKneski = false;
 
-        killBoarsCounter = 0;
+        killBoarsCounter = -1;
         killTigerCounter = 0;
 
         player = GameObject.Find("/Player");
@@ -349,6 +349,7 @@ public class DialogStartGamePlay : MonoBehaviour
                 player.GetComponent<PlayerTriggers>().convNumber = 3;
                 if (endConWithKneski == true)
                 {
+                    SceneManager.LoadScene("EndGame");
                     endConWithKneski = false;
                     tutorialMessage.text = "";
                     tutorialIsOn = false;
