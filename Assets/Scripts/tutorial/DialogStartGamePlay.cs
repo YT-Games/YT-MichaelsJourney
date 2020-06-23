@@ -19,6 +19,12 @@ public class DialogStartGamePlay : MonoBehaviour
     private int tutorialIndex;
     private bool tutorialIsOn;
 
+    public GameObject task1Boundaries;
+    public GameObject task2Boundaries;
+    public GameObject task3Boundaries;
+    public GameObject task4Boundaries;
+    public GameObject task5Boundaries;
+
     public GameObject X;
     public GameObject axe;
     public GameObject appleTree;
@@ -46,7 +52,7 @@ public class DialogStartGamePlay : MonoBehaviour
         continueButton.SetActive(false);
         TutorialTextImage.SetActive(false);
 
-        tutorialIndex = 14;
+        tutorialIndex = 0;
         tutorialIsOn = false;
         continueButtonIsOn = false;
 
@@ -54,8 +60,8 @@ public class DialogStartGamePlay : MonoBehaviour
 
         endConWithKneski = false;
 
-        killBoarsCounter = 9;
-        killTigerCounter = 2;
+        killBoarsCounter = 0;
+        killTigerCounter = 0;
 
         player = GameObject.Find("/Player");
         kneski = GameObject.Find("/Kneski");
@@ -183,15 +189,7 @@ public class DialogStartGamePlay : MonoBehaviour
             tutorialMessage.text = "press C to crouch";
             if (Input.GetKeyDown(KeyCode.C))
             {
-                tutorialIndex++;
-            }
-        }
-        else if (tutorialIndex == 7)
-        {
-            tutorialMessage.text = "press 1,2,3,4,5,6 to change weapons";
-            if (Input.GetKeyDown(KeyCode.Alpha2))
-            {
-                tutorialIndex++;
+                tutorialIndex = 11;
             }
         }
         else if (tutorialIndex == 8)
@@ -204,16 +202,9 @@ public class DialogStartGamePlay : MonoBehaviour
             }
             else if (Input.GetKeyDown(KeyCode.T))
             {
+                task1Boundaries.SetActive(false);
                 tutorialIndex = 12;
                 once = false;
-            }
-        }
-        else if (tutorialIndex == 9)
-        {
-            tutorialMessage.text = "press RIGHT MOUSE BUTTON to aim";
-            if (Input.GetKeyDown(KeyCode.Mouse1))
-            {
-                tutorialIndex++;
             }
         }
         else if (tutorialIndex == 10)
@@ -225,6 +216,7 @@ public class DialogStartGamePlay : MonoBehaviour
             }
             else if (Input.GetKeyDown(KeyCode.T))
             {
+                task5Boundaries.SetActive(false);
                 tutorialIndex = 13;
                 once = false;
             }
@@ -271,17 +263,21 @@ public class DialogStartGamePlay : MonoBehaviour
         }
         else if (tutorialIndex == 13)
         {
-            Vector3 boarPos = new Vector3(boar.transform.position.x,
-                                            boar.transform.position.y + xHightOffset,
-                                                boar.transform.position.z);
-            X.transform.position = boarPos;
-            X.SetActive(true);
-            tutorialMessage.text = "Task 3: search for the boar and kill him with the axe !!!";
-
+            if(once == false)
+            {
+                Vector3 boarPos = new Vector3(boar.transform.position.x,
+                                           boar.transform.position.y + xHightOffset,
+                                               boar.transform.position.z);
+                X.transform.position = boarPos;
+                X.SetActive(true);
+                tutorialMessage.text = "Task 3: search for the boar on the road and kill him with the axe !!!";
+                once = true;         
+            }
             if (boar.GetComponent<HealthScript>().is_Dead == true)
             {
                 X.SetActive(false);
-                tutorialMessage.text = "Task 3: Completed !!! press T to the next task ";
+                task2Boundaries.SetActive(false);
+                once = false;
                 tutorialIndex++;
             }
         }
@@ -300,6 +296,8 @@ public class DialogStartGamePlay : MonoBehaviour
 
             if (endConWithKneski == true)
             {
+                task3Boundaries.SetActive(false);
+                task4Boundaries.SetActive(false);
                 once = false;
                 X.SetActive(false);
                 tutorialIndex++;

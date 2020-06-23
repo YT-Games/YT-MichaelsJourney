@@ -18,7 +18,7 @@ public class DialogWithKneski : MonoBehaviour
 
     private void Start()
     {
-        index = 10;
+        index = 0;
         StartCoroutine(Type());
         continueButton.SetActive(false);
         kneskiTextImage.SetActive(true);
